@@ -11,17 +11,17 @@
         }
 
         body {
-            background-color: rgba(90, 202, 86, 1);
+            background-color: gray;
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
         }
 
         h1 {
-            color: rgb(1, 1, 37);
-            background-image: linear-gradient(to right, rgb(138, 19, 19), red, yellow);
+            color: black;
+            background-image: linear-gradient(to right, black, darkgray, red, darkblue);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
-            padding: 20px;
+            padding: 15px 0;
             border: 3px solid black;
             border-radius: 20px;
         }
@@ -33,7 +33,7 @@
 
         a {
             color: white;
-            background-color: rgb(83, 83, 241);
+            background-color: blue;
             border-radius: 8px;
             padding: 5px 10px;
             font-weight: bold;
@@ -41,18 +41,31 @@
         }
 
         a:hover {
-            color: rgb(240, 240, 123);
+            color: yellow;
             background-color: red;
             transition: .5s;
             text-decoration: underline;
         }
 
-        img {
+        img.logo {
             display: block;
             margin: auto;
             height: 210px;
             width: 210px;
             border-radius: 15px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            height: 310px;
+            width: 310px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            margin: 15px 0;
         }
 
         footer {
@@ -71,6 +84,16 @@
             text-align: center;
             color: yellow;
         }
+
+        footer > p.verde-limao {
+            text-align: center;
+            color: limegreen;
+        }
+
+        footer > p.rosa-claro {
+            text-align: center;
+            color: lightcoral;
+        }
     </style>
 </head>
 <body>
@@ -84,13 +107,16 @@
             <a href="index.html">FUNDO MUSICAL</a><br><br>
             <a href="quem-somos.html">QUEM SOMOS</a>
         </menu>
-        <img src="imagens/logo.png" alt="">
+        <img class="logo" src="imagens/logo.png" alt="">
+        <hr>
+        <img src="imagens/jb1.jpg" alt="">
+        <img src="imagens/jb2.jpg" alt="">
     </main>
     <footer>
         <p class="amarelo">Desenvolvido por KURINGA Desenvolvimento Web.</p>
-        <p>WhatsApp: (53) 99922-0370</p>
-        <p class="amarelo">Última atualização: 24/11/2025</p>
-        <p>&copy;&nbsp;2025 - Todos os direitos reservados.</p>
+        <p class="amarelo">WhatsApp: (53) 99922-0370</p>
+        <p class="verde-limao">Última atualização: 24/11/2025</p>
+        <p class="rosa-claro">&copy;&nbsp;2025 - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
