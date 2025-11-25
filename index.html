@@ -51,6 +51,14 @@
             text-decoration: underline;
         }
 
+        button.parar-musica {
+            color: white;
+            background-color: blue;
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
         img.logo {
             display: block;
             margin: auto;
@@ -110,13 +118,14 @@
     </style>
 </head>
 <body>
-    <audio src="mus-fundo/uplifting-and-inspiring-background-music.mp3" autoplay loop></audio>
+    <audio id="fundo-musical" src="mus-fundo/uplifting-and-inspiring-background-music.mp3" autoplay loop></audio>
     <header>
         <h1><span class="azul-ciano">GF </span><span class="verde-limao">Vídeo</span>-<span class="verde-limao">Comunicação</span></h1>
     </header>
     <main>
         <menu>
             <a href="index.html">FUNDO MUSICAL</a><br><br>
+            <button class="parar-musica" onclick="pararAudio()">PARAR FUNDO MUSICAL</button><br><br>
             <a href="quem-somos.html">QUEM SOMOS</a>
         </menu>
         <img class="logo" src="imagens/logo.png" alt="Imagem">
@@ -141,5 +150,12 @@
         <p class="verde-limao">Última atualização: 24/11/2025</p>
         <p class="rosa-claro">&copy;&nbsp;2025 - Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function pararAudio() {
+            const audio = document.getElementById("fundo-musical");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
 </body>
 </html>
