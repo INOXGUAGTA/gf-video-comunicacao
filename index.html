@@ -11,7 +11,7 @@
         }
 
         body {
-            background-color: gray;
+            background-color: rgb(167, 167, 167);
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
         }
@@ -31,9 +31,21 @@
             color: cyan;
         }
 
+        div.conteiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        img.logo-wapp {
+            height: 24px;
+            width: 24px;
+        }
+
         h3 {
             text-align: center;
-            margin: 5px 0;
+            margin: 6px 0;
         }
 
         menu {
@@ -72,6 +84,12 @@
             text-decoration: underline;
         }
 
+        img {
+            height: 354px;
+            width: 354px;
+            border-radius: 20px;
+        }
+
         img.logo {
             display: block;
             margin: auto;
@@ -80,31 +98,29 @@
             border-radius: 15px;
         }
 
-        img {
-            height: 354px;
-            width: 354px;
-            border-radius: 20px;
-            margin-bottom: 10px;
+        img.propa {
+            margin: 12px;
+        }
+
+        div.propa {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
         }
 
         hr {
             margin: 15px 0;
         }
 
-        div {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-        }
-
         video {
             height: 354px;
             width: 354px;
+            margin: 12px;
         }
 
         footer {
             color: white;
-            background-color: rgb(26, 26, 26);
+            background-color: black;
             margin: 10px 0;
             padding: 8px;
             border-radius: 10px;
@@ -134,7 +150,10 @@
     <audio id="fundo-musical" src="mus-fundo/uplifting-and-inspiring-background-music.mp3" autoplay loop></audio>
     <header>
         <h1><span class="azul-ciano">GF </span><span class="verde-limao">Vídeo</span>-<span class="verde-limao">Comunicação</span></h1>
-        <h3>WhatsApp: (53) 99135-0397</h3>
+        <div class="conteiner">
+            <img class="logo-wapp" src="imagens/logo-whatsapp.png" alt="Imagem">
+            <h3>(53) 99135-0397</h3>
+        </div>
     </header>
     <main>
         <menu>
@@ -144,16 +163,16 @@
         </menu>
         <img class="logo" src="imagens/logo.png" alt="Imagem">
         <hr>
-        <div>
-            <img src="imagens/kuringa.jpg" alt="Imagem">
-            <img src="imagens/tombi.jpg" alt="Imagem">
+        <div class="propa">
+            <img class="propa" src="imagens/kuringa.jpg" alt="Imagem">
+            <img class="propa" src="imagens/tombi.jpg" alt="Imagem">
         </div>
-        <div>
-            <img class="imagem" src="imagens/jb1.jpg" alt="Imagem">
-            <img class="imagem" src="imagens/jb2.jpg" alt="Imagem">
+        <div class="propa">
+            <img class="propa" src="imagens/jb1.jpg" alt="Imagem">
+            <img class="propa" src="imagens/jb2.jpg" alt="Imagem">
         </div>
         <hr>
-        <div>
+        <div class="propa">
             <video src="videos/video-jb.mp4" controls></video>
             <video src="videos/video-iptv.mp4" controls></video>
         </div>
