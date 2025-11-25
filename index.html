@@ -17,13 +17,17 @@
         }
 
         h1 {
-            color: black;
+            color: yellow;
             background-image: linear-gradient(to right, black, darkgray, red, darkblue);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
             padding: 15px 0;
             border: 3px solid black;
             border-radius: 20px;
+        }
+
+        span.azul-ciano {
+            color: cyan;
         }
 
         menu {
@@ -50,22 +54,31 @@
         img.logo {
             display: block;
             margin: auto;
-            height: 210px;
-            width: 210px;
+            height: 230px;
+            width: 230px;
             border-radius: 15px;
         }
 
         img {
-            display: block;
-            margin: auto;
-            height: 310px;
-            width: 310px;
+            height: 390px;
+            width: 390px;
             border-radius: 20px;
             margin-bottom: 10px;
         }
 
         hr {
             margin: 15px 0;
+        }
+
+        div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        video {
+            height: 390px;
+            width: 390px;
         }
 
         footer {
@@ -85,9 +98,9 @@
             color: yellow;
         }
 
-        footer > p.verde-limao {
+        .verde-limao {
             text-align: center;
-            color: limegreen;
+            color: greenyellow;
         }
 
         footer > p.rosa-claro {
@@ -97,20 +110,26 @@
     </style>
 </head>
 <body>
-    <audio src="musica/uplifting-and-inspiring-background-music.mp3" autoplay loop></audio>
+    <audio src="mus-fundo/uplifting-and-inspiring-background-music.mp3" autoplay loop></audio>
     <header>
-        <h1>GF Vídeo-Comunicação</h1>
+        <h1><span class="azul-ciano">GF </span><span class="verde-limao">Vídeo</span>-<span class="verde-limao">Comunicação</span></h1>
     </header>
     <main>
         <menu>
-            <a href="index.html">INÍCIO</a>
             <a href="index.html">FUNDO MUSICAL</a><br><br>
             <a href="quem-somos.html">QUEM SOMOS</a>
         </menu>
-        <img class="logo" src="imagens/logo.png" alt="">
+        <img class="logo" src="imagens/logo.png" alt="Imagem">
         <hr>
-        <img src="imagens/jb1.jpg" alt="">
-        <img src="imagens/jb2.jpg" alt="">
+        <div>
+            <img class="imagem" src="imagens/jb1.jpg" alt="Imagem">
+            <img class="imagem" src="imagens/jb2.jpg" alt="Imagem">
+        </div>
+        <hr>
+        <div>
+            <video src="videos/video-jb.mp4" controls></video>
+            <video src="videos/video-iptv.mp4" controls></video>
+        </div>
     </main>
     <footer>
         <p class="amarelo">Desenvolvido por KURINGA Desenvolvimento Web.</p>
